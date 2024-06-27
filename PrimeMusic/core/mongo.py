@@ -30,5 +30,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Prime
-    pymongodb = _mongo_sync_.Prime
+    mongodb = _mongo_async_.mongo.py
+    pymongodb = _mongo_sync_.mongo.py
